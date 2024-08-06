@@ -14,7 +14,9 @@ function UserDetails() {
         .catch(error => console.log(error))
     },[id])
 
-    // console.log(user)
+    if(!user.name){
+        return <di>Loading...</di>
+    }
 
   return (
     <div>
